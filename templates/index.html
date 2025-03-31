@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot de WhatsApp - Aura AI</title>
+</head>
+<body>
+    <h1>Bot de WhatsApp - Aura AI</h1>
+    <form action="/" method="POST">
+        <label for="mensaje">Escribe tu mensaje:</label>
+        <input type="text" name="mensaje" id="mensaje" required>
+        <button type="submit">Enviar</button>
+    </form>
+    {% if respuesta %}
+        <p><strong>Respuesta del bot:</strong> {{ respuesta }}</p>
+    {% endif %}
+</body>
+</html>
